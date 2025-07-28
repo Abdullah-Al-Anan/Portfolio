@@ -32,7 +32,7 @@ export default function Contact() {
       id="contact"
       className="min-h-screen bg-[var(--dim-white)] dark:bg-zinc-900 px-6 py-16 text-black dark:text-white"
     >
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Info Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center mb-18">
           {[
