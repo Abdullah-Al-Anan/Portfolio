@@ -31,6 +31,8 @@ function App() {
           color: 'var(--text-color)'
         }}
       >
+
+        
         <main className="flex-1 w-full">
           <Home />
           <About />
