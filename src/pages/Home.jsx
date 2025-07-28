@@ -26,14 +26,14 @@ export default function Home() {
 
           <h2 className="text-2xl font-semibold text-[var(--orange)] tracking-wide">
             <ReactTyped
-              strings={["Data Scientist", "Web Developer", "Teacher"]}
+              strings={["Data Scientist", "Data Engineer", "Data Analyst","Web Developer"]}
               typeSpeed={100}
               backSpeed={60}
               loop
             />
           </h2>
 
-          <p className="text-base leading-relaxed text-[rgba(0,0,0,0.7)] max-w-xl">
+          <p className="text-base leading-relaxed text-[rgba(0,0,0,0.7)] max-w-xl" style={{ textAlign: 'justify' }}>
             Detail-oriented Computer Science graduate with hands-on experience
             in data analysis, visualization, and research-driven problem
             solving. Proficient in Python, SQL, data visualization tools, and
@@ -49,8 +49,8 @@ export default function Home() {
           </p>
 
           <a
-            href="/MD_REHMAN_TOUFIQUE_CV.pdf"
-            download="MD_REHMAN_TOUFIQUE_CV.pdf"
+            href="/Abdullah Al Anan_Resume.pdf"
+            download="Abdullah Al Anan_Resume.pdf"
             className="inline-block px-6 py-3 rounded-md font-medium transition"
             style={{
               backgroundColor: "var(--orange)",

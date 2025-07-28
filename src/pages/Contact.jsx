@@ -1,7 +1,7 @@
 
 
 import { useRef } from 'react';
-import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope, FaGlobe } from 'react-icons/fa';
+import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope, FaGlobe,FaLinkedin } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
 
@@ -37,14 +37,14 @@ export default function Contact() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center mb-18">
           {[
             {
-              icon: <FaPhoneAlt />,
-              label: 'Call',
-              value: '+8801762609348',
-            },
-            {
               icon: <FaMapMarkerAlt />,
               label: 'Home',
               value: 'Banasree, Dhaka 1219',
+            },
+            {
+              icon: <FaPhoneAlt />,
+              label: 'Call',
+              value: '+8801762609348',
             },
             {
               icon: <FaEnvelope />,
@@ -54,8 +54,13 @@ export default function Contact() {
             {
               icon: <FaGlobe />,
               label: 'GitHub',
-              value: 'github.com/Abdullah-Al-Anan',
+              value: 'https://github.com/Abdullah-Al-Anan',
             },
+            {
+              icon: <FaLinkedin />,
+              label: 'LinkedIn',
+              value: 'https://www.linkedin.com/in/abdullah-al-anan/',
+          }
           ].map(({ icon, label, value }, i) => (
             <div
               key={i}
