@@ -8,7 +8,8 @@ import Portfolio from './pages/Portfolio.jsx';
 import Contact from './pages/Contact.jsx';
 import { Toaster } from 'react-hot-toast';
 import { Analytics } from "@vercel/analytics/react"
-
+import Experience from "./pages/Experience.jsx"
+import Thesis from './pages/Thesis.jsx';
 function App() {
 
   useEffect(() => {
@@ -36,9 +37,14 @@ function App() {
         <main className="flex-1 w-full">
           <Home />
           <About />
-          <Services />
+          <Experience />
+          
+      
           <Portfolio />
+          <Services />
+          
           <Contact />
+          
         </main>
         <Footer />
       </div>

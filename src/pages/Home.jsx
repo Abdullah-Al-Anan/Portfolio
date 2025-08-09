@@ -7,9 +7,9 @@ export default function Home() {
       className="min-h-screen flex items-center px-6 py-20"
       style={{ backgroundColor: "var(--dim-white)", color: "var(--black)" }}
     >
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
         {/* Left: Intro */}
-        <div className="text-center md:text-left space-y-6">
+        <div className="text-center md:text-left space-y-6 ">
           <h3
             className="text-xl font-medium"
             style={{ color: "rgba(0, 0, 0, 0.6)" }}
@@ -24,28 +24,64 @@ export default function Home() {
             Abdullah Al <span style={{ color: "var(--orange)" }}>Anan</span>
           </h1>
 
-          <h2 className="text-2xl font-semibold text-[var(--orange)] tracking-wide">
-            <ReactTyped
-              strings={["Data Scientist", "Data Engineer", "Data Analyst","Web Developer"]}
-              typeSpeed={100}
-              backSpeed={60}
-              loop
-            />
-          </h2>
+          {/* <div className=" flex items-center rounded-2xl justify-center bg-gradient-to-br from-slate-600 to-slate-800 px-1 py-1">
+  <div className="px-6 py-4 rounded-2xl shadow-xl border border-white/30 backdrop-blur-[10px] bg-gradient-to-br from-blue-200/20 to-blue-400/10 max-w-xl w-full">
+    <div className="flex flex-wrap items-center gap-2 text-base sm:text-lg md:text-xl font-medium">
+      <span className="text-white whitespace-nowrap">I have expertise in</span>
+      <span className="text-gray-100 font-semibold tracking-wide">
+        <ReactTyped
+          strings={[
+            "Data Science",
+            "Data Engineering",
+            "Data Analysis",
+            "Web Developing",
+          ]}
+          typeSpeed={100}
+          backSpeed={60}
+          loop
+        />
+      </span>
+    </div>
+  </div>
+</div> */}
+          <div className="px-6 py-4 rounded-2xl shadow-sm border border-white/30 backdrop-blur-[8px] bg-gradient-to-br from-blue-200/20 to-blue-400/10 max-w-xl mx-auto">
+            <div className="flex flex-wrap items-center gap-2 text-base sm:text-lg md:text-xl font-medium">
+              <span className="text-black whitespace-nowrap">
+                I have expertise in
+              </span>
+              <span className="text-[var(--orange)] font-semibold tracking-wide">
+                <ReactTyped
+                  strings={[
+                    "Data Science",
+                    "Data Engineering",
+                    "Data Analysis",
+                    "Web Developing",
+                  ]}
+                  typeSpeed={100}
+                  backSpeed={60}
+                  loop
+                />
+              </span>
+            </div>
+          </div>
 
-          <p className="text-base leading-relaxed text-[rgba(0,0,0,0.7)] max-w-xl" style={{ textAlign: 'justify' }}>
-            Detail-oriented Computer Science graduate with hands-on experience
-            in data analysis, visualization, and research-driven problem
-            solving. Proficient in Python, SQL, data visualization tools, and
-            cloud data platforms, with the ability to build insightful
-            dashboards and extract actionable intelligence using statistical
-            methods and machine learning. Experienced in both academic research
-            and practical projects, with a solid foundation in full-stack
-            development (Django, Node.js). Passionate about leveraging data
-            science, business intelligence, and AI to drive strategic
-            decision-making and deliver impactful solutions. Committed to
-            continuous learning and collaborating with teams that prioritize
-            analytical thinking and data-driven growth.
+          <p
+            className="text-base leading-relaxed text-[rgba(0,0,0,0.7)] min-w-xl"
+            style={{ textAlign: "justify" }}
+          >
+            Detail-oriented data professional with a strong focus on data
+            workflows, automation, visualization, and analytics-driven
+            decision-making. Experienced in designing data pipelines,
+            integrating systems, and transforming complex datasets into
+            actionable insights using statistical techniques and machine
+            learning. With a solid foundation in computer science and hands-on
+            experience in building end-to-end data solutions, I bring a
+            problem-solving mindset and a results-driven approach to every task.
+            Passionate about using data to drive strategic impact, streamline
+            operations, and support scalable, insight-driven applications.
+            Committed to continuous learning, innovation, and contributing to
+            data-centric environments that value clarity, efficiency, and
+            measurable outcomes.
           </p>
 
           <a
@@ -57,8 +93,8 @@ export default function Home() {
               color: "var(--dim-white)",
             }}
             onMouseEnter={(e) =>
-              (e.currentTarget.style.backgroundColor = "#d1491a")
-            }
+							(e.currentTarget.style.backgroundColor = "rgba(21, 24, 70, 0.88)")
+						}
             onMouseLeave={(e) =>
               (e.currentTarget.style.backgroundColor = "var(--orange)")
             }
@@ -68,11 +104,11 @@ export default function Home() {
         </div>
 
         {/* Right: Image */}
-        <div className="flex justify-center">
+        <div className="flex justify-end">
           <img
             src="pic.jpg" // Replace with your image path
             alt="Anan"
-            className="w-full max-w-sm rounded-xl shadow-lg border border-[rgba(237,91,45,0.2)]"
+            className="justify-end w-full max-w-sm rounded-xl shadow-lg border border-[rgba(237,91,45,0.2)]"
           />
         </div>
       </div>

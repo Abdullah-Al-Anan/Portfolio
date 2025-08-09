@@ -4,9 +4,11 @@ export default function Navbar() {
   const links = [
     { href: "#home", label: "Home", icon: "fa-home" },
     { href: "#about", label: "About", icon: "fa-user" },
+    { href: "#experience", label: "Experience", icon: "fa-briefcase" },
+    { href: "#portfolio", label: "Projects", icon: "fa-folder-open" },
     { href: "#services", label: "Services", icon: "fa-list" },
-    { href: "#portfolio", label: "Projects", icon: "fa-briefcase" },
     { href: "#contact", label: "Contact", icon: "fa-comments" },
+
   ];
 
   return (
@@ -24,7 +26,7 @@ export default function Navbar() {
           <li key={href}>
             <a
               href={href}
-              className="flex items-center space-x-2 px-3 py-2 rounded-md transition-colors duration-200 hover:bg-[#f7d6c1] hover:text-[var(--black)] text-[var(--black)]"
+              className="flex items-center space-x-2 px-3 py-2 rounded-md transition-colors duration-200 hover:bg-[#7aa9e6] hover:text-[var(--black)] text-[var(--black)]"
             >
               <i className={`fas ${icon} w-5 text-center`}></i>
               <span>{label}</span>

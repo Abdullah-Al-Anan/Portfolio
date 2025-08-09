@@ -34,7 +34,7 @@ export default function Contact() {
     >
       <div className="max-w-6xl mx-auto">
         {/* Info Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center mb-18">
+        <div className="flex justify-between text-center mb-18 flex-wrap gap-4">
           {[
             {
               icon: <FaMapMarkerAlt />,
@@ -50,23 +50,13 @@ export default function Contact() {
               icon: <FaEnvelope />,
               label: 'Email',
               value: 'abdullahalanan30@gmail.com',
-            },
-            {
-              icon: <FaGlobe />,
-              label: 'GitHub',
-              value: 'https://github.com/Abdullah-Al-Anan',
-            },
-            {
-              icon: <FaLinkedin />,
-              label: 'LinkedIn',
-              value: 'https://www.linkedin.com/in/abdullah-al-anan/',
-          }
+            }
           ].map(({ icon, label, value }, i) => (
             <div
               key={i}
               className="bg-white dark:bg-zinc-800 shadow-md border border-[rgba(237,91,45,0.2)] 
                         rounded-xl py-6 px-4 hover:shadow-lg transition 
-                        w-full sm:w-64 min-h-[80px] flex flex-col items-center justify-center mx-auto"
+                        w-full sm:w-64 min-h-[100px] flex flex-col items-center justify-center mx-auto"
             >
               <div className="text-[var(--orange)] text-2xl mb-3">{icon}</div>
               <h4 className="font-semibold text-lg mb-1">{label}</h4>
@@ -111,7 +101,7 @@ export default function Contact() {
           <div className="md:col-span-2">
             <button
               type="submit"
-              className="w-full px-6 py-3 bg-[var(--orange)] text-white rounded-md font-medium hover:bg-[#d1491a] transition"
+              className="w-full px-6 py-3 bg-blue-600 text-white rounded-md font-medium hover:bg-blue-800 transition"
             >
               Send Message
             </button>

@@ -1,36 +1,35 @@
-
-
 export default function Services() {
   const services = [
     {
-      icon: 'fa-laptop-code',
-      title: 'Full-Stack Web Development',
-      desc: 'Developing full-stack web applications using Django, Node.js, and React with clean, scalable code and intuitive interfaces.',
+      icon: "fa-chart-line",
+      title: "Data Analysis & Visualization",
+      desc: "Transforming raw data into actionable insights using Python, Power BI, Metabase and Google BigQuery.",
     },
     {
-      icon: 'fa-chart-line',
-      title: 'Data Analysis & Visualization',
-      desc: 'Transforming raw data into actionable insights using Python, Pandas, Seaborn, Power BI, and Google BigQuery.',
+      icon: "fa-database",
+      title: "Database & Cloud Services",
+      desc: "Designing and managing relational and NoSQL databases with MySQL, PostgreSQL, and BigQuery cloud warehouse.",
     },
     {
-      icon: 'fa-brain',
-      title: 'Machine Learning Projects',
-      desc: 'Building ML models for real-world predictions using Scikit-learn, TensorFlow, and PyTorch with a focus on healthcare and NLP.',
+      icon: "fa-laptop-code",
+      title: "Full-Stack Web Development",
+      desc: "Developing full-stack web applications using Django and React with clean, scalable code and intuitive interfaces.",
     },
     {
-      icon: 'fa-database',
-      title: 'Database & Cloud Services',
-      desc: 'Designing and managing relational and NoSQL databases with MySQL, PostgreSQL, and BigQuery cloud warehouse.',
+      icon: "fa-brain",
+      title: "Machine Learning Projects",
+      desc: "Building ML models for real-world predictions using Scikit-learn, TensorFlow, and PyTorch with a focus on healthcare and NLP.",
+    },
+
+    {
+      icon: "fa-code-branch",
+      title: "Version Control & Collaboration",
+      desc: "Experienced in Git, GitHub, and team collaboration practices for efficient versioning, branching, and code reviews.",
     },
     {
-      icon: 'fa-code-branch',
-      title: 'Version Control & Collaboration',
-      desc: 'Experienced in Git, GitHub, and team collaboration practices for efficient versioning, branching, and code reviews.',
-    },
-    {
-      icon: 'fa-lightbulb',
-      title: 'Problem Solving & Mentoring',
-      desc: '200+ problems solved on platforms and 1.5+ years teaching experience in algorithms, OOP, and pattern recognition at university level.',
+      icon: "fa-lightbulb",
+      title: "Problem Solving & Mentoring",
+      desc: "200+ problems solved on platforms and 1.5+ years teaching experience in algorithms, OOP, and pattern recognition at university level.",
     },
   ];
 
@@ -38,13 +37,11 @@ export default function Services() {
     <section
       id="services"
       className="min-h-screen px-6 py-16"
-      style={{ backgroundColor: 'var(--dim-white)', color: 'var(--black)' }}
+      style={{ backgroundColor: "var(--dim-white)", color: "var(--black)" }}
     >
       <div className="max-w-6xl mx-auto">
         <section className="mb-12 p-6 md:p-8 bg-white dark:bg-zinc-800 rounded-xl shadow-sm border border-[rgba(237,91,45,0.15)]">
-          <h2
-            className="text-2xl md:text-3xl font-bold text-center mb-6 text-[var(--orange)] border-b border-[var(--orange)] pb-2"
-          >
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 text-[var(--orange)] border-b border-[var(--orange)] pb-2">
             Services
           </h2>
 
@@ -59,7 +56,7 @@ export default function Services() {
                 </div>
                 <h4
                   className="text-xl font-semibold mb-2"
-                  style={{ color: 'var(--black)' }}
+                  style={{ color: "var(--black)" }}
                 >
                   {service.title}
                 </h4>
